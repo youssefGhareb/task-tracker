@@ -1,14 +1,17 @@
 import React from 'react'
-import Button from './Button'
+import { AiOutlineDelete } from 'react-icons/ai'
 
-const Task = ({ task }) => {
+const Task = ({ task, onDelete, onDbClick }) => {
+  var reminderClass
+  task.reminder ? reminderClass = "reminder" : reminderClass = ""
   return (
-      <div className="task">
-          <h3>{task.title}
-          <Button bg="red" text="Delete" pd="5px 10px"/>
-          </h3>
-          <p>{task.date}</p>
-      </div>
+    <div className={`task ${reminderClass}`} onDoubleClick={() => onDbClick(task.id)}>
+      <h3>
+        {task.title}
+        <AiOutlineDelete className='delete-icon' onClick={() => onDelete(task.id)} />
+      </h3>
+      <p>{task.date}</p>
+    </div>
   )
 }
 

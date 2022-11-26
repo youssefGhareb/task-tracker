@@ -1,68 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.container{
-    max-width: 500px;
-    overflow: auto;
-    min-height: 300px;
-    border: 1px solid steelblue;
-    padding: 30px;
-    border-radius: 3px;
-    margin: auto;
+.container {
+  max-width: 500px;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 3px;
+  margin: auto;
 }
 
-.header{
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.tasks {
+}
+
+.task {
+  background-color: #e7ebea;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(24, 24, 24);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.delete-icon {
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.reminder {
+  border-left: 3px solid green;
+}
+
+.add-form {
+  margin: 10px 0px 30px 0px;
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  max-width: 95%;
+}
+
+.form-control label {
+  display: block;
+  color: rgb(41, 41, 41);
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.form-control input[type="text"] {
+  width: 100%;
+  display: block;
+  padding: 8px 10px;
+}
+
+.form-control-check{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.btn{
-    display: inline-block;
-    color: #fff;
-    background: #000;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 0;
-}
-
-h1{
-    font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 1px;
-}
-
-
-.tasks{
-
-}
-
-.task{
-    background-color: #e7ebea;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-}
-
-.task h3{
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(24, 24, 24);
-    margin: 0;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.task p{
-    font-size: 13px;
-    font-weight: 500;
-    color: rgb(41, 41, 41);
-    margin-bottom: 0;
-    margin-top: 2px;
+.form-control-check input[type="checkbox"]{
+    flex: 2;
+}
+.form-control-check label{
+    flex: 1;
+}
+
+.btn-block{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 10px 5px;
 }
