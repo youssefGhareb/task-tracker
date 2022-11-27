@@ -2,13 +2,14 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
 }
 
 .container {
   max-width: 500px;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid #80808042;
+  /* border: 1px solid #80808042; */
   box-shadow: 13px 20px 10px #00000052;
   padding: 30px;
   border-radius: 3px;
@@ -17,6 +18,15 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
+  background: #fff;
+  /* background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(241,241,241,1) 81%); */
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 42%,
+    rgba(241, 241, 241, 1) 81%
+  ); */
 }
 
 .header {
@@ -43,11 +53,8 @@ h1 {
   letter-spacing: 1px;
 }
 
-.tasks {
-}
-
 .task {
-  background-color: #e7ebea;
+  background-color: #f1f1f1;
   margin-bottom: 10px;
   padding: 5px 10px;
   cursor: pointer;
@@ -95,27 +102,30 @@ h1 {
   display: block;
   color: rgb(41, 41, 41);
   font-size: 15px;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
   font-weight: 500;
 }
 
 .form-control input[type="text"] {
   width: 100%;
   display: block;
-  padding: 8px 10px;
+  padding: 14px 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 4px 10px #00000026;
 }
 
 .form-control-check {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
 }
 
 .form-control-check input[type="checkbox"] {
-  flex: 2;
+  outline: 1px solid #00000078;
+  outline-style: auto;
+  margin-left: 20px;
 }
 .form-control-check label {
-  flex: 1;
+  display: inline;
 }
 
 .btn-block {
@@ -123,8 +133,9 @@ h1 {
   background-color: #000;
   color: white;
   padding: 10px 5px;
-  box-shadow: 0px 8px 10px #0000008f;
+  box-shadow: 0px 4px 10px #00000026;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .close-icon {

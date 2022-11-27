@@ -5,7 +5,7 @@ const Header = ({ title, click, showAdd }) => {
     return (
         <header className="header">
             <h1>{title}</h1>
-            <Button bg={showAdd ? "white" : "green"} text={showAdd ? <AiOutlineCloseSquare className="close-icon" /> : "Show"} click={click} />
+            <Button bg={showAdd ? "#fff" : "green"} text={showAdd ? <AiOutlineCloseSquare className="close-icon" /> : "Add Task"} click={click} />
         </header>
     )
 }
