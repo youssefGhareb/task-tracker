@@ -8,10 +8,15 @@ body {
   max-width: 500px;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 1px solid #80808042;
+  box-shadow: 13px 20px 10px #00000052;
   padding: 30px;
   border-radius: 3px;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }
 
 .header {
@@ -68,7 +73,7 @@ h1 {
 
 .delete-icon {
   font-size: 18px;
-  color: red;
+  color: #000;
   cursor: pointer;
 }
 
@@ -100,22 +105,29 @@ h1 {
   padding: 8px 10px;
 }
 
-.form-control-check{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.form-control-check input[type="checkbox"]{
-    flex: 2;
+.form-control-check input[type="checkbox"] {
+  flex: 2;
 }
-.form-control-check label{
-    flex: 1;
+.form-control-check label {
+  flex: 1;
 }
 
-.btn-block{
-    width: 100%;
-    background-color: #000;
-    color: white;
-    padding: 10px 5px;
+.btn-block {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 10px 5px;
+  box-shadow: 0px 8px 10px #0000008f;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 20px;
+  color: #000;
 }
